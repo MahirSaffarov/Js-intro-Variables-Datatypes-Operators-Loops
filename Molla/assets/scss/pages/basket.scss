@@ -489,6 +489,7 @@
                     &:hover {
                         .dropPage {
                             display: block;
+
                             li {
                                 &:before {
                                     width: 0;
@@ -639,10 +640,11 @@
 }
 
 #tabs {
+    border-bottom: 1px solid #cccccc49;
+
     .container {
         max-width: 1250px;
         margin-top: 1%;
-        padding-bottom: 1%;
     }
 
     .tab {
@@ -683,9 +685,10 @@
     }
 }
 
-#logReg {
-    background-image: url("/assets/img/login-bg.jpg");
-    background-color: #789;
+#headerShop {
+    background-image: url("/assets/img/page-header-bg.jpg");
+    padding: 2.6rem 0 2rem;
+    background-color: #ebebeb;
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -693,442 +696,258 @@
     .container {
         max-width: 1188px;
 
-        .regLog {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-            padding: 120px 0px;
+        .text {
+            text-align: center;
+            line-height: 20px;
 
-            .login {
-                background-color: white;
-                padding: 37px 60px 64px;
-                display: none;
-                .top {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
+            h1 {
+                font-size: 40px;
+                font-weight: 400;
+                color: #333333;
+                font-family: 'Poppins', sans-serif;
+            }
 
-                    button {
-                        font-size: 24px;
-                        font-family: 'Poppins', sans-serif;
-                        color: #333333;
-                        padding: 9px 10px;
-                        background-color: transparent;
+            p {
+                color: #fcb941;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+#cart {
+    border-bottom: 1px solid #33333310;
+
+    .container {
+        max-width: 1188px;
+        margin-top: 3%;
+        .emptyBasket {
+            text-align: center;
+            padding: 77px 0 50px;
+
+            i {
+                font-size: 96px;
+                color: #666666;
+            }
+
+            p {
+                font-size: 14px;
+                color: #777777;
+                margin-bottom: 30px;
+                padding: 5px 10px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 300;
+            }
+
+            button {
+                font-family: 'Poppins', sans-serif;
+                padding: 8.5px 15px;
+                width: 170px;
+                height: 39.6px;
+                font-size: 14px;
+                color: #FFFFFF;
+                background-color: #fcb941;
+                border: none;
+
+                &:hover {
+                    background-color: #ba8c38;
+                }
+            }
+        }
+
+        .products {
+            table {
+                width: 100%;
+
+
+                th {
+                    color: #999999;
+                    font-size: 14px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    padding: 14px 0px;
+                    border-bottom: 1px solid #33333320;
+                }
+
+                td {
+                    padding: 30px 0px;
+                    font-size: 16px;
+                    font-family: 'Poppins', sans-serif;
+                    color: #333333;
+                    border-bottom: 1px solid #33333320;
+
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    input {
+                        width: 100px;
+                        height: 39.6px;
+                        padding: 8.5px 26px;
+                        text-align: center;
+                        font-size: 14px;
+                        border: 1px solid #33333334;
+                    }
+
+                    input[type=number]:focus {
+                        outline: 1px solid #fcb941;
                         border: none;
-                        width: 227.5px;
-                        height: 55.6px;
-
                     }
 
-                    .in {
-                        border-bottom: 2px solid #fcb941;
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
                     }
 
-                    .up {
-                        border-bottom: 2px solid #cccccc70;
+                    .inp {
+                        position: relative;
+                        display: inline-block;
+
+                        .minus {
+                            position: absolute;
+                            top: 10px;
+                            left: 7px;
+                        }
+
+                        .plus {
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                        }
                     }
+
+
                 }
 
-                .center {
-                    padding-top: 20px;
-
-                    form {
-                        margin-bottom: 13px;
-
-                        label {
-                            margin-bottom: 11px;
-                            color: #666666;
-                            font-size: 14px;
-                            font-family: 'Poppins', sans-serif;
-                            font-weight: 300;
-                            display: block;
-                        }
-
-                        input {
-                            width: 455px;
-                            height: 41px;
-                            padding: 8.5px 20px;
-                            outline: none;
-                            border: 1px solid #cccccc70;
-                            background-color: rgb(250, 250, 250);
-                        }
-                    }
-                }
-
-                .centerBot {
-                    height: 100%;
-                    margin-bottom: 23px;
-                    padding: 20px 0px 45px;
-                    border-bottom: 1px solid #cccccc70;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    gap: 7%;
-
-                    button {
-                        width: 115px;
-                        height: 39.6px;
-                        background-color: transparent;
-                        color: #fcb941;
-                        border: 1px solid #fcb941;
-                        font-size: 14px;
-                        font-family: 'Poppins', sans-serif;
-                        font-weight: 300;
-                        padding: 8.5px 15px;
-                        transition: all 0.3s;
-
-                        &:hover {
-                            color: white;
-                            background-color: #fcb941;
-                        }
-                    }
-
-                    input[type=checkbox] {
-                        position: relative;
-                        cursor: pointer;
-                        width: 0px;
-                        height: 0px;
-                    }
-
-                    input[type=checkbox]:checked:before {
-                        content: "";
-                        display: flex;
-                        position: relative;
-                        width: 18px;
-                        height: 18px;
-                        background-color: #000000;
-                        top: -14px;
-                        left: -20px;
-                    }
-
-
-                    input[type=checkbox]:before {
-                        content: "";
-                        display: flex;
-                        position: relative;
-                        width: 18px;
-                        height: 18px;
-                        border: 1px solid #cccccc79;
-                        background-color: rgb(245, 245, 245);
-                        top: -14px;
-                        left: -20px;
-                    }
-
-
-                    input[type=checkbox]:after {
-                        content: "";
-                        display: flex;
-                        width: 0px;
-                        height: 0px;
-                        border: solid #000000;
-                        border-width: 0 0px 0px 0;
-                        -webkit-transform: rotate(180deg);
-                        -ms-transform: rotate(180deg);
-                        transform: rotate(180deg);
-                        position: relative;
-                        top: 0px;
-                        left: 0px;
-                        top: -14px;
-                        left: -20px;
-                    }
-
-                    input[type=checkbox]:checked:after {
-                        content: "";
-                        display: block;
-                        width: 6px;
-                        height: 10px;
-                        border: solid #ffffff;
-                        border-width: 0 3px 3px 0;
-                        -webkit-transform: rotate(45deg);
-                        -ms-transform: rotate(45deg);
-                        transform: rotate(45deg);
-                        position: absolute;
-                        top: -12px;
-                        left: -14px;
-                    }
-
-                    label {
-                        font-size: 14px;
-                        font-family: 'Poppins', sans-serif;
-                        color: #666666;
-                        font-weight: 300;
-                    }
-
+                .pro {
                     span {
-                        font-size: 14px;
-                        font-family: 'Poppins', sans-serif;
-                        color: #666666;
-                        transition: all 0.3s;
-                        font-weight: 300;
+                        padding-left: 25px;
+                    }
 
-                        &:hover {
-                            color: #fcb941;
-                        }
+                    .img {
+                        display: inline-block;
                     }
                 }
 
-                .bottom {
-                    text-align: center;
+                .price {
+                    padding-right: 25px;
+                }
 
-                    p {
-                        font-size: 14px;
-                        font-family: 'Poppins', sans-serif;
-                        font-weight: 300;
-                        color: #777777;
-                        margin-bottom: 27px;
-                    }
+                .quant {
+                    padding-right: 25px;
+                }
 
-                    button {
-                        font-size: 14px;
-                        font-family: 'Poppins', sans-serif;
-                        font-weight: 300;
-                        color: #333333;
-                        padding: 8.5px 10px;
-                        background-color: transparent;
-                        border: 1px solid #77777730;
-                        width: 217.5px;
-                        height: 39.6px;
-                        transition: all 0.3s;
+                .tot {
+                    color: #fcb941;
+                    padding-right: 25px;
+                }
 
-                        &:hover {
-                            background-color: rgb(248, 248, 248);
-                        }
-
-                        i {
-                            font-size: 14px;
-                            margin-right: 10px;
-                        }
-                    }
-
-                    .google {
-                        i {
-                            color: rgb(183, 42, 42);
-                        }
-                    }
-
-                    .fb {
-                        i {
-                            color: rgb(0, 106, 255);
-                        }
+                .del {
+                    i {
+                        padding-top: 8px;
+                        color: #CCCCCC;
                     }
                 }
             }
 
-            .register {
-                background-color: white;
-                
-                padding: 37px 60px 64px;
+            .bonus {
+                margin-top: 3%;
+                display: flex;
+                justify-content: space-between;
 
-                .top {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
+                form {
+                    input {
+                        width: 276px;
+                        height: 41px;
+                        padding: 8.5px 20px;
+                        background-color: rgb(250, 250, 250);
+                        font-size: 14px;
+                        border: 1px solid #33333334;
+                    }
 
-                    button {
-                        font-size: 24px;
-                        font-family: 'Poppins', sans-serif;
-                        color: #333333;
-                        padding: 9px 10px;
-                        background-color: transparent;
+                    input[type=text]:focus {
+                        outline: 1px solid #fcb941;
                         border: none;
-                        width: 227.5px;
-                        height: 55.6px;
-
+                        background-color: white
                     }
-
-                    .up {
-                        border-bottom: 2px solid #fcb941;
-                    }
-
-                    .in {
-                        border-bottom: 2px solid #cccccc70;
-                    }
-                }
-
-                .center {
-                    padding-top: 20px;
-
-                    form {
-                        margin-bottom: 13px;
-
-                        label {
-                            margin-bottom: 11px;
-                            color: #666666;
-                            font-size: 14px;
-                            font-family: 'Poppins', sans-serif;
-                            font-weight: 300;
-                            display: block;
-                        }
-
-                        input {
-                            width: 455px;
-                            height: 41px;
-                            padding: 8.5px 20px;
-                            outline: none;
-                            border: 1px solid #cccccc70;
-                            background-color: rgb(250, 250, 250);
-                        }
-                    }
-                }
-
-                .centerBot {
-                    height: 100%;
-                    margin-bottom: 23px;
-                    padding: 6px 0px 30px;
-                    border-bottom: 1px solid #cccccc70;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    gap: 10%;
 
                     button {
-                        width: 115px;
-                        height: 39.6px;
-                        background-color: transparent;
-                        color: #fcb941;
+                        width: 40px;
+                        height: 42px;
                         border: 1px solid #fcb941;
-                        font-size: 14px;
-                        font-family: 'Poppins', sans-serif;
-                        font-weight: 300;
-                        padding: 8.5px 15px;
-                        transition: all 0.3s;
+                        background-color: white;
+                        color: #fcb941;
+                        transition: 0.3s;
+                        margin-left: 5px;
 
                         &:hover {
-                            color: white;
                             background-color: #fcb941;
-                        }
-                    }
-
-                    input[type=checkbox] {
-                        position: relative;
-                        cursor: pointer;
-                        width: 0px;
-                        height: 0px;
-                    }
-
-                    input[type=checkbox]:checked:before {
-                        content: "";
-                        display: flex;
-                        position: relative;
-                        width: 18px;
-                        height: 18px;
-                        background-color: #000000;
-                        top: 7px;
-                        left: -25px;
-                    }
-
-
-                    input[type=checkbox]:before {
-                        content: "";
-                        display: flex;
-                        position: relative;
-                        width: 18px;
-                        height: 18px;
-                        border: 1px solid #cccccc79;
-                        background-color: rgb(245, 245, 245);
-                        top: 7px;
-                        left: -25px;
-                    }
-
-
-                    input[type=checkbox]:after {
-                        content: "";
-                        display: flex;
-                        width: 0px;
-                        height: 0px;
-                        border: solid #000000;
-                        border-width: 0 0px 0px 0;
-                        -webkit-transform: rotate(180deg);
-                        -ms-transform: rotate(180deg);
-                        transform: rotate(180deg);
-                        position: relative;
-                        top: 0px;
-                        left: 0px;
-                        top: 7px;
-                        left: -25px;
-                    }
-
-                    input[type=checkbox]:checked:after {
-                        content: "";
-                        display: block;
-                        width: 6px;
-                        height: 10px;
-                        border: solid #ffffff;
-                        border-width: 0 3px 3px 0;
-                        -webkit-transform: rotate(45deg);
-                        -ms-transform: rotate(45deg);
-                        transform: rotate(45deg);
-                        position: absolute;
-                        top: 10px;
-                        left: -19px;
-                    }
-
-                    label {
-                        font-size: 14px;
-                        font-family: 'Poppins', sans-serif;
-                        color: #666666;
-                        font-weight: 300;
-                    }
-
-                    span {
-                        font-size: 14px;
-                        font-family: 'Poppins', sans-serif;
-                        color: #666666;
-                        transition: all 0.3s;
-                        font-weight: 300;
-
-                        &:hover {
-                            color: #fcb941;
+                            color: white;
                         }
                     }
                 }
 
-                .bottom {
-                    text-align: center;
+                .update {
+                    padding: 8.5px 15px;
+                    width: 152px;
+                    height: 39.6px;
+                    background-color: white;
+                    color: #333333;
+                    font-size: 14px;
+                    font-family: 'Poppins', sans-serif;
+                    border: 1px solid #3333333d;
+                    transition: all 0.5s;
 
-                    p {
-                        font-size: 14px;
-                        font-family: 'Poppins', sans-serif;
-                        font-weight: 300;
-                        color: #777777;
-                        margin-bottom: 27px;
+                    i {
+                        margin-left: 5px;
                     }
 
-                    button {
-                        font-size: 14px;
-                        font-family: 'Poppins', sans-serif;
-                        font-weight: 300;
-                        color: #333333;
-                        padding: 8.5px 10px;
-                        background-color: transparent;
-                        border: 1px solid #77777730;
-                        width: 217.5px;
-                        height: 39.6px;
-                        transition: all 0.3s;
-
-                        &:hover {
-                            background-color: rgb(248, 248, 248);
-                        }
-
-                        i {
-                            font-size: 14px;
-                            margin-right: 10px;
-                        }
+                    &:hover {
+                        color: #fcb941;
                     }
+                }
+            }
+        }
 
-                    .google {
-                        i {
-                            color: rgb(183, 42, 42);
-                        }
-                    }
-
-                    .fb {
-                        i {
-                            color: rgb(0, 106, 255);
-                        }
-                    }
+        .total {
+            width: 100%;
+            padding: 25px 30px 30px;
+            border: 1px dashed #3333336a;
+            background-color: #F9F9F9;
+            .top{
+                border-bottom: 1px solid #CCCCCC;
+                p{
+                    font-size: 16px;
+                    color: #333333;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                }
+            }
+            .topCenter{
+                padding-top: 17px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #cccccc6d;
+                p{
+                    font-size: 16px;
+                    color: #333333;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                }
+            }
+            .center{
+                h3{
+                    font-size: 16px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    padding: 20px 0px 13px;
+                }
+                form{
+                    
                 }
             }
         }
@@ -1610,6 +1429,61 @@
         .logos {
             display: flex;
             justify-content: center !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #cart {
+        .products {
+            td {
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #cart {
+        .products {
+            table {
+                margin-top: 3% !important;
+                border: 1px solid #33333334 !important;
+                position: relative !important;
+            }
+
+            td {
+                font-size: 16px !important;
+                display: block !important;
+                border: none !important;
+                text-align: center !important;
+                padding: 5px !important;
+            }
+
+            .pro {
+                width: 100% !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+
+                .img {
+                    padding: 30px 0px 20px !important;
+                }
+            }
+
+            .tot {
+                padding-bottom: 40px !important;
+            }
+
+            th {
+                display: none;
+            }
+
+            .del {
+                position: absolute;
+                top: 0;
+                right: 10px;
+            }
         }
     }
 }

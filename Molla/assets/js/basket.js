@@ -52,15 +52,3 @@ $(document).ready(function () {
 //         })
 //     })
 // });
-
-//login
-$(document).ready(function(){
-    $(".regLog .up").click(function(){
-        $(".regLog .register").css("display","block")
-        $(".regLog .login").css("display","none")
-    })
-    $(".regLog .in").click(function(){
-        $(".regLog .login").css("display","block")
-        $(".regLog .register").css("display","none")
-    })
-})
