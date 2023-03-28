@@ -560,12 +560,12 @@
 
 
                 .line {
-                    width: 85px;
+                    width: 80px;
                     height: 1.5px;
                     background-color: #fcb941;
                     position: absolute;
                     bottom: 0;
-                    left: 20px;
+                    left: -10px;
                 }
             }
 
@@ -718,17 +718,20 @@
 
 #cart {
     border-bottom: 1px solid #33333310;
+    padding-bottom: 50px;
 
     .container {
         max-width: 1188px;
         margin-top: 3%;
+
         .emptyBasket {
             text-align: center;
-            padding: 77px 0 50px;
+            padding: 37px 0 10px;
 
             i {
                 font-size: 96px;
                 color: #666666;
+                padding-bottom: 30px;
             }
 
             p {
@@ -826,6 +829,10 @@
                 .pro {
                     span {
                         padding-left: 25px;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: #fcb941;
+                        }
                     }
 
                     .img {
@@ -850,6 +857,11 @@
                     i {
                         padding-top: 8px;
                         color: #CCCCCC;
+                        cursor: pointer;
+                        transition: all 0.3s;
+                        &:hover{
+                            color: black;
+                        }
                     }
                 }
             }
@@ -918,36 +930,165 @@
             padding: 25px 30px 30px;
             border: 1px dashed #3333336a;
             background-color: #F9F9F9;
-            .top{
+
+            .top {
                 border-bottom: 1px solid #CCCCCC;
-                p{
+
+                p {
                     font-size: 16px;
                     color: #333333;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 500;
                 }
             }
-            .topCenter{
+
+            .topCenter {
                 padding-top: 17px;
                 display: flex;
                 justify-content: space-between;
                 border-bottom: 1px solid #cccccc6d;
-                p{
+
+                p {
                     font-size: 16px;
                     color: #333333;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 400;
                 }
             }
-            .center{
-                h3{
+
+            .center {
+                h3 {
                     font-size: 16px;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 400;
                     padding: 20px 0px 13px;
                 }
-                form{
-                    
+
+                form {
+                    line-height: 40px;
+
+                    input[type='radio']:after {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 15px;
+                        top: -14px;
+                        left: 0px;
+                        position: relative;
+                        background-color: rgb(250, 250, 250);
+                        content: '';
+                        display: inline-block;
+                        visibility: visible;
+                        border: 2px solid white;
+                        outline: 1px solid #33333334;
+
+                    }
+
+                    input[type='radio']:checked:after {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 15px;
+                        top: -14px;
+                        left: 0px;
+                        position: relative;
+                        background-color: #fcb941;
+                        content: '';
+                        display: inline-block;
+                        visibility: visible;
+                        border: 4px solid white;
+                        outline: 1px solid #fcb941;
+                    }
+
+                    label {
+                        margin-left: 5px;
+                        font-size: 14px;
+                        font-family: 'Poppins', sans-serif;
+                        color: #333333;
+                        font-weight: 300;
+                    }
+
+                    span {
+                        float: right;
+                        font-size: 14px;
+                        font-family: 'Poppins', sans-serif;
+                        color: #333333;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .centerBot {
+                padding: 14px 0 30px;
+                border-bottom: 1px solid #99999929;
+
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    color: #333333;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+
+                span {
+                    font-size: 14px;
+                    font-family: 'Poppins', sans-serif;
+                    color: #999999;
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid #999999;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: #fcb941;
+                        border-bottom-color: #fcb941;
+                    }
+                }
+            }
+
+            .bottom {
+                padding-top: 20px;
+
+                .bottomTop {
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        color: #fcb941;
+                        font-size: 16px;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+
+                button {
+                    border: 1px solid #fcb941;
+                    color: #fcb941;
+                    font-size: 14px;
+                    width: 100%;
+                    padding: 8.5px 15px;
+                    font-family: 'Poppins', sans-serif;
+                    background-color: white;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        color: white;
+                        background-color: #fcb941;
+                    }
+                }
+            }
+
+        }
+
+        .contShop {
+
+            button {
+                margin-top: 30px;
+                font-size: 14px;
+                width: 100%;
+                padding: 8.5px 15px;
+                font-family: 'Poppins', sans-serif;
+                background-color: rgb(253, 253, 253);
+                color: #333333;
+                border: 1px solid #33333341;
+                transition: all 0.3s;
+                &:hover{
+                    color: #fcb941;
                 }
             }
         }

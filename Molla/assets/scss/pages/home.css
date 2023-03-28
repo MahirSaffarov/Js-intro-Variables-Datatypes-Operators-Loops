@@ -165,7 +165,7 @@
   display: flex;
   justify-content: center;
   height: 10px;
-  width: 100% px;
+  width: 100%;
   background-color: white;
 }
 
@@ -454,7 +454,7 @@
   background-color: #fcb941;
   position: absolute;
   bottom: 0;
-  left: 20px;
+  left: -5px;
 }
 #topBottom .container .center .caret {
   display: flex;

@@ -124,12 +124,12 @@
                                 </div>
 
                                 <div class="wish">
-                                    <a href=""><i class="fa-regular fa-heart"><sup>0</sup></i></a>
+                                    <a href="wishlist.html"><i class="fa-regular fa-heart"><sup>0</sup></i></a>
                                     <p>Wishlist</p>
                                 </div>
 
                                 <div class="cart">
-                                    <a href=""><i class="fa-solid fa-cart-shopping"><sup>0</sup></i></a>
+                                    <a href="basket.html"><i class="fa-solid fa-cart-shopping"><sup>0</sup></i></a>
                                     <p>Cart</p>
                                     <div class="products">
                                         <p>No products in the compare.</p>
@@ -177,13 +177,14 @@
                         <div class="center">
                             <ul>
                                 <div class="caret">
-                                    <li><a href="" style="color: #fcb941;">Home</a></li>
-                                    <i class="fa-solid fa-angle-down" style="color: #fcb941;"></i>
-                                </div>
-                                <div class="line"></div>
-                                <div class="caret">
-                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="home.html">Home</a></li>
                                     <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                
+                                <div class="caret" style="position: relative;">
+                                    <li><a href="shop.html" style="color: #fcb941;">Shop</a></li>
+                                    <i class="fa-solid fa-angle-down" style="color: #fcb941;"></i>
+                                    <div class="line"></div>
                                 </div>
                                 <div class="caret">
                                     <li><a href="account.html">Account</a></li>
@@ -203,11 +204,11 @@
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="caret">
-                                    <li><a href="">Blog</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="caret">
-                                    <li><a href="">Contact</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                             </ul>
@@ -233,6 +234,18 @@
         </section>
     </header>
     <main>
+        <section id="headerShop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text">
+                            <h1>List</h1>
+                            <p>Shop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="tabs">
             <div class="container">
                 <div class="row">
@@ -241,10 +254,146 @@
                             <ul>
                                 <li><a href="home.html">Home</a></li>
                                 <i class="fa-solid fa-angle-right"></i>
-                                <li><a href="">Pages</a></li>
+                                <li><a href="">Shop</a></li>
                                 <i class="fa-solid fa-angle-right"></i>
-                                <li class="login"><a href="account.html">Login</a></li>
+                                <li class="login"><a href="account.html">List</a></li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="shopping">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="left">
+                            <div class="top">
+                                <p>Filters:</p>
+                                <span>Clean All</span>
+                            </div>
+                            <div class="catog">
+                                <div class="catogTop">
+                                    <p>Category</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="catogItems">
+                                    <span>Furniture</span>
+                                    <button>8</button>
+                                </div>
+                                <div class="catogItems">
+                                    <span>Coffee & Tables</span>
+                                    <button>1</button>
+                                </div>
+                                <div class="catogItems">
+                                    <span>Lighting</span>
+                                    <button>3</button>
+                                </div>
+                                <div class="catogItems">
+                                    <span>Decoration</span>
+                                    <button>5</button>
+                                </div>
+                                <div class="catogItems">
+                                    <span>Electronics</span>
+                                    <button>1</button>
+                                </div>
+                                <div class="catogItems">
+                                    <span>Beds</span>
+                                    <button>2</button>
+                                </div>
+                                <div class="catogItems">
+                                    <span>Armchairs & Chaises</span>
+                                    <button>3</button>
+                                </div>
+                                <div class="catogItems">
+                                    <span>Sofas & Sleeper Sofas</span>
+                                    <button>1</button>
+                                </div>
+                            </div>
+                            <div class="size">
+                                <div class="topSize">
+                                    <p>Size</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="sizeItems">
+                                    <input type="checkbox">
+                                    <span>Extra Small</span>
+                                </div>
+                                <div class="sizeItems">
+                                    <input type="checkbox">
+                                    <span>Small</span>
+                                </div>
+                                <div class="sizeItems">
+                                    <input type="checkbox">
+                                    <span>Medium</span>
+                                </div>
+                                <div class="sizeItems">
+                                    <input type="checkbox">
+                                    <span>Large</span>
+                                </div>
+                                <div class="sizeItems">
+                                    <input type="checkbox">
+                                    <span>Extra Large</span>
+                                </div>
+                            </div>
+                            <div class="color">
+                                <div class="colorTop">
+                                    <p>Colour</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="colorItems" style="background-color: #CC9966;"></div>
+                                <div class="colorItems" style="background-color: #3399CC;"></div>
+                                <div class="colorItems" style="background-color: #9966CC;"></div>
+                                <div class="colorItems" style="background-color: #333333;"></div>
+                                <div class="colorItems" style="background-color: #669933;"></div>
+                                <div class="colorItems" style="background-color: #CC3333;"></div>
+                                <div class="colorItems" style="background-color: #999999;"></div>
+                            </div>
+                            <div class="brand">
+                                <div class="brandTop">
+                                    <p>Brand</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="brandItems">
+                                    <input type="checkbox">
+                                    <span>Next</span>
+                                </div>
+                                <div class="brandItems">
+                                    <input type="checkbox">
+                                    <span>River Island</span>
+                                </div>
+                                <div class="brandItems">
+                                    <input type="checkbox">
+                                    <span>Geox</span>
+                                </div>
+                                <div class="brandItems">
+                                    <input type="checkbox">
+                                    <span>New Balance</span>
+                                </div>
+                                <div class="brandItems">
+                                    <input type="checkbox">
+                                    <span>UGG</span>
+                                </div>
+                                <div class="brandItems">
+                                    <input type="checkbox">
+                                    <span>F&F</span>
+                                </div>
+                                <div class="brandItems">
+                                    <input type="checkbox">
+                                    <span>Nike</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="priceTop">
+                                    <p>Price</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="priceCenter">
+                                    <p>Price Range: <span>$0 - $1000</span></p>
+                                    <span>Filter</span>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

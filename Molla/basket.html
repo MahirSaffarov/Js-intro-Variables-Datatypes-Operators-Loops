@@ -124,12 +124,12 @@
                                 </div>
 
                                 <div class="wish">
-                                    <a href=""><i class="fa-regular fa-heart"><sup>0</sup></i></a>
+                                    <a href="wishlist.html"><i class="fa-regular fa-heart"><sup>0</sup></i></a>
                                     <p>Wishlist</p>
                                 </div>
 
                                 <div class="cart">
-                                    <a href=""><i class="fa-solid fa-cart-shopping"><sup>0</sup></i></a>
+                                    <a href="basket.html"><i class="fa-solid fa-cart-shopping"><sup>0</sup></i></a>
                                     <p>Cart</p>
                                     <div class="products">
                                         <p>No products in the compare.</p>
@@ -177,13 +177,14 @@
                         <div class="center">
                             <ul>
                                 <div class="caret">
-                                    <li><a href="" style="color: #fcb941;">Home</a></li>
-                                    <i class="fa-solid fa-angle-down" style="color: #fcb941;"></i>
-                                </div>
-                                <div class="line"></div>
-                                <div class="caret">
-                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="home.html">Home</a></li>
                                     <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                
+                                <div class="caret" style="position: relative;">
+                                    <li><a href="shop.html" style="color: #fcb941;">Shop</a></li>
+                                    <i class="fa-solid fa-angle-down" style="color: #fcb941;"></i>
+                                    <div class="line"></div>
                                 </div>
                                 <div class="caret">
                                     <li><a href="account.html">Account</a></li>
@@ -203,11 +204,11 @@
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="caret">
-                                    <li><a href="">Blog</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="caret">
-                                    <li><a href="">Contact</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                             </ul>
@@ -311,24 +312,20 @@
                             <div class="center">
                                 <h3>Shipping:</h3>
                                 <form>
-                                    <input type="radio">
-                                    <span>Free Shipping</span>
-                                    <span>$00.00</span>
-                                </form>
-                                <form>
-                                    <input type="radio">
-                                    <span>Standard:</span>
-                                    <span>$10.00</span>
-                                </form>
-                                <form>
-                                    <input type="radio">
-                                    <span>Express:</span>
+                                    <input type="radio" name="shipping">
+                                    <label>Free Shipping</label>
+                                    <span>$0.00</span><br>
+                                    <input type="radio" name="shipping">
+                                    <label>Standard:</label>
+                                    <span>$10.00</span><br>
+                                    <input type="radio" name="shipping">
+                                    <label>Express:</label>
                                     <span>$20.00</span>
                                 </form>
                             </div>
                             <div class="centerBot">
                                 <p>Estimate for Your Country</p>
-                                <span>Estimate for Your Country</span>
+                                <span>Change address</span>
                             </div>
                             <div class="bottom">
                                 <div class="bottomTop">
@@ -338,7 +335,7 @@
                                 <button>PROCEED TO CHECKOUT</button>
                             </div>
                         </div>
-                        <a href="shop.html"><button>CONTINUE SHOPPING <i class="fa-solid fa-rotate"></i></button></a>
+                        <a class="contShop" href="shop.html"><button>CONTINUE SHOPPING <i class="fa-solid fa-rotate"></i></button></a>
                     </div>
                 </div>
             </div>

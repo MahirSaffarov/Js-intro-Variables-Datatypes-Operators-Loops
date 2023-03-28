@@ -124,12 +124,12 @@
                                 </div>
 
                                 <div class="wish">
-                                    <a href=""><i class="fa-regular fa-heart"><sup>0</sup></i></a>
+                                    <a href="wishlist.html"><i class="fa-regular fa-heart"><sup>0</sup></i></a>
                                     <p>Wishlist</p>
                                 </div>
 
                                 <div class="cart">
-                                    <a href=""><i class="fa-solid fa-cart-shopping"><sup>0</sup></i></a>
+                                    <a href="basket.html"><i class="fa-solid fa-cart-shopping"><sup>0</sup></i></a>
                                     <p>Cart</p>
                                     <div class="products">
                                         <p>No products in the compare.</p>
@@ -177,13 +177,14 @@
                         <div class="center">
                             <ul>
                                 <div class="caret">
-                                    <li><a href="" style="color: #fcb941;">Home</a></li>
-                                    <i class="fa-solid fa-angle-down" style="color: #fcb941;"></i>
-                                </div>
-                                <div class="line"></div>
-                                <div class="caret">
-                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="home.html">Home</a></li>
                                     <i class="fa-solid fa-angle-down"></i>
+                                </div>
+
+                                <div class="caret" style="position: relative;">
+                                    <li><a href="shop.html" style="color: #fcb941;">Shop</a></li>
+                                    <i class="fa-solid fa-angle-down" style="color: #fcb941;"></i>
+                                    <div class="line"></div>
                                 </div>
                                 <div class="caret">
                                     <li><a href="account.html">Account</a></li>
@@ -203,11 +204,11 @@
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="caret">
-                                    <li><a href="">Blog</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="caret">
-                                    <li><a href="">Contact</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                             </ul>
@@ -233,6 +234,18 @@
         </section>
     </header>
     <main>
+        <section id="headerShop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text">
+                            <h1>Wishlist</h1>
+                            <p>Shop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="tabs">
             <div class="container">
                 <div class="row">
@@ -243,8 +256,53 @@
                                 <i class="fa-solid fa-angle-right"></i>
                                 <li><a href="">Pages</a></li>
                                 <i class="fa-solid fa-angle-right"></i>
-                                <li class="login"><a href="account.html">Login</a></li>
+                                <li class="login"><a href="account.html">Wishlist</a></li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-none">
+                        <div class="emptyBasket">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>No products added to the wishlist</p>
+                            <button>GO SHOP</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="products">
+                            <table>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Stock Status</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td class="pro">
+                                        <div class="img"><img src="assets/img/play.jpg" alt=""></div><span>Microsoft –
+                                            Refurbish Xbox One S 500GB</span>
+                                    </td>
+                                    <td class="price">$279.99</td>
+                                    <td class="quant">In stock</td>
+                                    <td class="tot"><button><i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                                    </td>
+                                    <td class="del"><i class="fa-solid fa-xmark"></i></td>
+                                </tr>
+                            </table>
+                            <div class="bonus">
+                                <p>Share on:</p>
+                                <button><i class="fa-brands fa-facebook-f"></i></button>
+                                <button><i class="fa-brands fa-twitter"></i></button>
+                                <button><i class="fa-brands fa-instagram"></i></button>
+                                <button><i class="fa-brands fa-youtube"></i></button>
+                                <button><i class="fa-brands fa-pinterest"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
