@@ -180,7 +180,7 @@
                                     <li><a href="home.html">Home</a></li>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
-                                
+
                                 <div class="caret" style="position: relative;">
                                     <li><a href="shop.html" style="color: #fcb941;">Shop</a></li>
                                     <i class="fa-solid fa-angle-down" style="color: #fcb941;"></i>
@@ -266,7 +266,7 @@
         <section id="shopping">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 hid">
                         <div class="left">
                             <div class="top">
                                 <p>Filters:</p>
@@ -391,8 +391,411 @@
                                 <div class="priceCenter">
                                     <p>Price Range: <span>$0 - $1000</span></p>
                                     <span>Filter</span>
-
                                 </div>
+                                <div class="priceItems">
+                                    <input type="range" value="100" id="first">
+                                    <input type="range" value="100" id="second">
+                                </div>
+                                <div class="prices">
+                                    <span>0$</span>
+                                    <span>1000$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        <div class="productCount">
+                            <div class="left">
+                                <p><span>Showing </span>5 of 50 <span>Products</span></p>
+                            </div>
+                            <div class="right">
+                                <label>Sort by:</label>
+                                <select name="" id="">
+                                    <option value="Default">Default</option>
+                                    <option value="Most Popular">Most Popular</option>
+                                    <option value="Most Rated">Most Rated</option>
+                                    <option value="Date">Date</option>
+                                </select>
+                                <svg width="16" height="10" class="first">
+                                    <rect x="0" y="0" width="4" height="4"></rect>
+                                    <rect x="6" y="0" width="10" height="4"></rect>
+                                    <rect x="0" y="6" width="4" height="4"></rect>
+                                    <rect x="6" y="6" width="10" height="4"></rect>
+                                </svg>
+                                <svg width="10" height="10">
+                                    <rect x="0" y="0" width="4" height="4"></rect>
+                                    <rect x="6" y="0" width="4" height="4"></rect>
+                                    <rect x="0" y="6" width="4" height="4"></rect>
+                                    <rect x="6" y="6" width="4" height="4"></rect>
+                                </svg>
+                                <svg width="16" height="10">
+                                    <rect x="0" y="0" width="4" height="4"></rect>
+                                    <rect x="6" y="0" width="4" height="4"></rect>
+                                    <rect x="12" y="0" width="4" height="4"></rect>
+                                    <rect x="0" y="6" width="4" height="4"></rect>
+                                    <rect x="6" y="6" width="4" height="4"></rect>
+                                    <rect x="12" y="6" width="4" height="4"></rect>
+                                </svg>
+                                <svg width="22" height="10">
+                                    <rect x="0" y="0" width="4" height="4"></rect>
+                                    <rect x="6" y="0" width="4" height="4"></rect>
+                                    <rect x="12" y="0" width="4" height="4"></rect>
+                                    <rect x="18" y="0" width="4" height="4"></rect>
+                                    <rect x="0" y="6" width="4" height="4"></rect>
+                                    <rect x="6" y="6" width="4" height="4"></rect>
+                                    <rect x="12" y="6" width="4" height="4"></rect>
+                                    <rect x="18" y="6" width="4" height="4"></rect>
+                                </svg>
+                            </div>
+                        </div>
+                        <section id="products" class="pad">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="left">
+                                        <div class="img">
+                                            <img src="assets/img/product1.jpg" alt="">
+                                            <span>Top</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 firstText">
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <p>Beige metal hoop tote bag</p>
+                                        <span>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
+                                            luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed
+                                            lectus.
+                                        </span>
+                                        <div class="colors">
+                                            <div class="color" style="background-color: #333333;"></div>
+                                            <div class="color" style="background-color: #3399CC;"></div>
+                                            <div class="color" style="background-color: #669933;"></div>
+                                            <div class="color" style="background-color: #CC3333;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="right">
+                                        <div class="top">
+                                            <span>$75.00-$80.00</span>
+                                        </div>
+                                        <div class="centerTop">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>( 2 Reviews )</span>
+                                        </div>
+                                        <div class="centerBot">
+                                            <div class="binoc">
+                                                <i class="fa-solid fa-binoculars"></i>
+                                                <span>quick view</span>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="wish">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <button><i class="fa-solid fa-list-check"></i>SELECT OPTIONS</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 secondText">
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <p>Beige metal hoop tote bag</p>
+                                        <span>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
+                                            luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed
+                                            lectus.
+                                        </span>
+                                        <div class="colors">
+                                            <div class="color" style="background-color: #333333;"></div>
+                                            <div class="color" style="background-color: #3399CC;"></div>
+                                            <div class="color" style="background-color: #669933;"></div>
+                                            <div class="color" style="background-color: #CC3333;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        <section id="products">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="left">
+                                        <div class="img">
+                                            <img src="assets/img/product2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 firstText">
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <p>Beige ring handle circle cross body bag</p>
+                                        <span>Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.
+                                            Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis.
+                                            Vestibulum volutpat, lacus
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="right">
+                                        <div class="top">
+                                            <span>$55.00</span>
+                                        </div>
+                                        <div class="centerTop">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>( 2 Reviews )</span>
+                                        </div>
+                                        <div class="centerBot">
+                                            <div class="binoc">
+                                                <i class="fa-solid fa-binoculars"></i>
+                                                <span>quick view</span>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="wish">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <button><i class="fa-solid fa-cart-plus"></i>ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 secondText">
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <p>Beige metal hoop tote bag</p>
+                                        <span>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
+                                            luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed
+                                            lectus.
+                                        </span>
+                                        <div class="colors">
+                                            <div class="color" style="background-color: #333333;"></div>
+                                            <div class="color" style="background-color: #3399CC;"></div>
+                                            <div class="color" style="background-color: #669933;"></div>
+                                            <div class="color" style="background-color: #CC3333;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        <section id="products">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="left">
+                                        <div class="img">
+                                            <img src="assets/img/product3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 firstText">
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <p>Beige V neck button cardigan</p>
+                                        <span>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
+                                            luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed
+                                            lectus.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="right">
+                                        <div class="top">
+                                            <span>$72.00</span>
+                                        </div>
+                                        <div class="centerTop">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>( 2 Reviews )</span>
+                                        </div>
+                                        <div class="centerBot">
+                                            <div class="binoc">
+                                                <i class="fa-solid fa-binoculars"></i>
+                                                <span>quick view</span>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="wish">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <button><i class="fa-solid fa-cart-plus"></i>ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 secondText">
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <p>Beige metal hoop tote bag</p>
+                                        <span>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
+                                            luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed
+                                            lectus.
+                                        </span>
+                                        <div class="colors">
+                                            <div class="color" style="background-color: #333333;"></div>
+                                            <div class="color" style="background-color: #3399CC;"></div>
+                                            <div class="color" style="background-color: #669933;"></div>
+                                            <div class="color" style="background-color: #CC3333;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        <section id="products">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="left">
+                                        <div class="img">
+                                            <img src="assets/img/product4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 firstText">
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <p>Black denim dungaree dress</p>
+                                        <span>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
+                                            luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed
+                                            lectus.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="right">
+                                        <div class="top">
+                                            <span>$60.00</span>
+                                        </div>
+                                        <div class="centerTop">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>( 2 Reviews )</span>
+                                        </div>
+                                        <div class="centerBot">
+                                            <div class="binoc">
+                                                <i class="fa-solid fa-binoculars"></i>
+                                                <span>quick view</span>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="wish">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <button><i class="fa-solid fa-cart-plus"></i>ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 secondText">
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <p>Beige metal hoop tote bag</p>
+                                        <span>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
+                                            luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed
+                                            lectus.
+                                        </span>
+                                        <div class="colors">
+                                            <div class="color" style="background-color: #333333;"></div>
+                                            <div class="color" style="background-color: #3399CC;"></div>
+                                            <div class="color" style="background-color: #669933;"></div>
+                                            <div class="color" style="background-color: #CC3333;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        <section id="products" class="notLine">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="left">
+                                        <div class="img">
+                                            <img src="assets/img/product6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 firstText">
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <p>Black faux leather chain trim sandals</p>
+                                        <span>Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.
+                                            Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis.
+                                            Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu
+                                            pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu,
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="right">
+                                        <div class="top">
+                                            <span>$90.00</span>
+                                        </div>
+                                        <div class="centerTop">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>( 2 Reviews )</span>
+                                        </div>
+                                        <div class="centerBot">
+                                            <div class="binoc">
+                                                <i class="fa-solid fa-binoculars"></i>
+                                                <span>quick view</span>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="wish">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <button><i class="fa-solid fa-cart-plus"></i>ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 secondText">
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <p>Beige metal hoop tote bag</p>
+                                        <span>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
+                                            luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed
+                                            lectus.
+                                        </span>
+                                        <div class="colors">
+                                            <div class="color" style="background-color: #333333;"></div>
+                                            <div class="color" style="background-color: #3399CC;"></div>
+                                            <div class="color" style="background-color: #669933;"></div>
+                                            <div class="color" style="background-color: #CC3333;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        <div class="pagination">
+                            <div class="prev">
+                                <span>&#8592 Prev</span>
+                            </div>
+                            <div class="pages">
+                                <button class="first">1</button>
+                                <button>2</button>
+                                <button>3</button>
+                            </div>
+                            <div class="pageCount">
+                                <span>of 10</span>
+                            </div>
+                            <div class="next">
+                                <span>Next &#8594</span>
                             </div>
                         </div>
                     </div>
@@ -472,6 +875,149 @@
             </div>
         </section>
     </footer>
+    <div class="secondSide">
+        <div class="scroll">
+            <div class="left">
+                <div class="top">
+                    <p>Filters:</p>
+                    <span>Clean All</span>
+                </div>
+                <div class="catog">
+                    <div class="catogTop">
+                        <p>Category</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="catogItems">
+                        <span>Furniture</span>
+                        <button>8</button>
+                    </div>
+                    <div class="catogItems">
+                        <span>Coffee & Tables</span>
+                        <button>1</button>
+                    </div>
+                    <div class="catogItems">
+                        <span>Lighting</span>
+                        <button>3</button>
+                    </div>
+                    <div class="catogItems">
+                        <span>Decoration</span>
+                        <button>5</button>
+                    </div>
+                    <div class="catogItems">
+                        <span>Electronics</span>
+                        <button>1</button>
+                    </div>
+                    <div class="catogItems">
+                        <span>Beds</span>
+                        <button>2</button>
+                    </div>
+                    <div class="catogItems">
+                        <span>Armchairs & Chaises</span>
+                        <button>3</button>
+                    </div>
+                    <div class="catogItems">
+                        <span>Sofas & Sleeper Sofas</span>
+                        <button>1</button>
+                    </div>
+                </div>
+                <div class="size">
+                    <div class="topSize">
+                        <p>Size</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="sizeItems">
+                        <input type="checkbox">
+                        <span>Extra Small</span>
+                    </div>
+                    <div class="sizeItems">
+                        <input type="checkbox">
+                        <span>Small</span>
+                    </div>
+                    <div class="sizeItems">
+                        <input type="checkbox">
+                        <span>Medium</span>
+                    </div>
+                    <div class="sizeItems">
+                        <input type="checkbox">
+                        <span>Large</span>
+                    </div>
+                    <div class="sizeItems">
+                        <input type="checkbox">
+                        <span>Extra Large</span>
+                    </div>
+                </div>
+                <div class="color">
+                    <div class="colorTop">
+                        <p>Colour</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="colorItems" style="background-color: #CC9966;"></div>
+                    <div class="colorItems" style="background-color: #3399CC;"></div>
+                    <div class="colorItems" style="background-color: #9966CC;"></div>
+                    <div class="colorItems" style="background-color: #333333;"></div>
+                    <div class="colorItems" style="background-color: #669933;"></div>
+                    <div class="colorItems" style="background-color: #CC3333;"></div>
+                    <div class="colorItems" style="background-color: #999999;"></div>
+                </div>
+                <div class="brand">
+                    <div class="brandTop">
+                        <p>Brand</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="brandItems">
+                        <input type="checkbox">
+                        <span>Next</span>
+                    </div>
+                    <div class="brandItems">
+                        <input type="checkbox">
+                        <span>River Island</span>
+                    </div>
+                    <div class="brandItems">
+                        <input type="checkbox">
+                        <span>Geox</span>
+                    </div>
+                    <div class="brandItems">
+                        <input type="checkbox">
+                        <span>New Balance</span>
+                    </div>
+                    <div class="brandItems">
+                        <input type="checkbox">
+                        <span>UGG</span>
+                    </div>
+                    <div class="brandItems">
+                        <input type="checkbox">
+                        <span>F&F</span>
+                    </div>
+                    <div class="brandItems">
+                        <input type="checkbox">
+                        <span>Nike</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="priceTop">
+                        <p>Price</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="priceCenter">
+                        <p>Price Range: <span>$0 - $1000</span></p>
+                        <span>Filter</span>
+                    </div>
+                    <div class="priceItems">
+                        <input type="range" value="100" id="first">
+                        <input type="range" value="100" id="second">
+                    </div>
+                    <div class="prices">
+                        <span>0$</span>
+                        <span>1000$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cog">
+            <i class="fa-solid fa-gear open"></i>
+            <i class="fa-solid fa-xmark close"></i>
+        </div>
+    </div>
     <div class="sidebar">
         <div class="close">
             <i class="fa-solid fa-xmark"></i>

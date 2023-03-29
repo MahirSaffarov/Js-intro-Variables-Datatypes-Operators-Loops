@@ -9,17 +9,17 @@ $(document).ready(function () {
         $(this).data('clicked', true);
     });
 
-    // $(window).resize(function () {
-    //     if ($(window).width() > 991) {
-    //         $(".sidebar").animate({ left: '-280px' });
-    //     }
+    $(window).resize(function () {
+        if ($(window).width() > 991) {
+            $(".sidebar").animate({ left: '-280px' });
+        }
     //     else if ($("#topCenter .left .iconBar i").data('clicked') && $(window).width() < 991) {
     //         $(".sidebar").animate({ left: '280px' });
     //     }
     //     else if($(".sidebar .close i").data('clicked')){
     //         $(".sidebar").animate({left: '-280px'})
     //     }
-    // });
+    });
 });
 $(document).ready(function () {
     $(".headings .menus").click(function () {

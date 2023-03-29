@@ -454,7 +454,7 @@
   background-color: #fcb941;
   position: absolute;
   bottom: 0;
-  left: 20px;
+  left: -5px;
 }
 #topBottom .container .center .caret {
   display: flex;
@@ -541,6 +541,43 @@
 }
 #tabs .tab ul .login a {
   color: #333333;
+}
+
+#about .container {
+  max-width: 1188px;
+}
+#about .container .aboutUs {
+  margin-bottom: 50px;
+}
+#about .container .aboutUs .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#about .container .aboutUs .img img {
+  width: 100%;
+  height: 100%;
+}
+#about .container .aboutUs .img .text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px;
+}
+#about .container .aboutUs .img .text p {
+  font-size: 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+#about .container .aboutUs .img .text span {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 16px;
 }
 
 #footbar {
