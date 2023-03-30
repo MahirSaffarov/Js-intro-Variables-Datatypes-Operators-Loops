@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #topHeader {
     background-color: #333333;
     height: 39.5px;
@@ -489,6 +493,7 @@
                     &:hover {
                         .dropPage {
                             display: block;
+
                             li {
                                 &:before {
                                     width: 0;
@@ -911,58 +916,46 @@
             }
         }
 
-        .carousel {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .owl-prev,
-        .owl-next {
+        .owl-nav button {
             position: absolute;
-            cursor: pointer;
+            color: #fcb941;
+            margin: auto;
+            transition: all 0.3s ease-in-out;
             height: 100%;
-            width: 1%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            span {
-                position: absolute;
-                font-size: 64px;
-            }
+            top: 0;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
 
-        .owl-prev {
+        .owl-dots {
+            display: none;
+        }
+
+        .owl-nav button.owl-prev {
             left: 0px;
+            font-size: 48px;
         }
 
-        .owl-next {
+        .owl-nav button.owl-next {
             right: 0px;
+            font-size: 48px;
         }
 
         .menu {
             display: flex;
             justify-content: center;
-            gap: 1%;
-            margin-top: 1%;
-            transition: all 0.5s;
-            width: max-content;
 
             .card {
-                width: 273px;
-                height: 430px;
-                margin-right: 20px;
+                width: auto;
+                height: auto;
 
                 .img {
-                    width: 270px;
-                    height: 270px;
+                    width: 100%;
+                    height: 100%;
                     position: relative;
 
                     img {
-                        width: 270px;
-                        height: 270px;
+                        width: 100%;
+                        height: 100%;
                     }
 
                     .secondImg {
@@ -1022,8 +1015,8 @@
                 .text {
                     position: relative;
                     z-index: 1;
-                    width: 270px;
-                    height: 154.6px;
+                    width: 100%;
+                    height: auto;
                     background-color: white;
                     padding: 16px 15px 4px 15px;
                     overflow: hidden;
@@ -1779,14 +1772,13 @@
 
 #trendPro {
     .container {
-        max-width: 1220px;
-        padding-bottom: 4.5%;
+        max-width: 1188px;
         border-bottom: 1px solid #66666622;
         overflow: hidden;
 
         .left {
             h1 {
-                font-size: 23px;
+                font-size: 24px;
                 font-family: 'Poppins', sans-serif;
                 color: #333333;
                 font-weight: 600;
@@ -1794,6 +1786,13 @@
 
             .img {
                 margin-top: 10%;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
 
@@ -1801,6 +1800,11 @@
             display: flex;
             justify-content: flex-end;
             gap: 3%;
+
+            .first {
+                color: #fcb941;
+                border-bottom: 1px solid #fcb941;
+            }
 
             p {
                 color: #777777;
@@ -1812,65 +1816,45 @@
             }
         }
 
-        .carousel {
-            width: 100%;
+        .owl-nav button {
+            position: absolute;
+            color: #fcb941;
+            margin: auto;
+            transition: all 0.3s ease-in-out;
             height: 100%;
-            position: relative;
-            overflow: hidden;
+            top: 0;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
 
-            .left {
-                color: #fcb941;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                position: absolute;
-                z-index: 1;
-                left: 0px;
+        .owl-dots {
+            display: none;
+        }
 
-                i {
-                    position: absolute;
-                    cursor: pointer;
-                }
-            }
+        .owl-nav button.owl-prev {
+            left: 0px;
+            font-size: 48px;
+        }
 
-            .right {
-                color: #fcb941;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                position: absolute;
-                z-index: 1;
-                right: 0px;
-
-                i {
-                    position: absolute;
-                    cursor: pointer;
-                }
-            }
+        .owl-nav button.owl-next {
+            right: 0px;
+            font-size: 48px;
         }
 
         .menu {
-            display: flex;
-            margin-top: 1%;
-            transition: all 0.5s;
-            width: max-content;
-            // position: relative;
-            // left: -7%;
-
+            margin-top: 8px;
 
             .card {
-                width: 225px;
-                height: 390px;
-                margin-right: 20px;
+                width: auto;
+                height: auto;
 
                 .img {
-                    width: 220px;
-                    height: 225px;
+                    width: 100%;
+                    height: 100%;
                     position: relative;
 
                     img {
-                        width: 220px;
-                        height: 225px;
+                        width: 100%;
+                        height: 100%;
                     }
 
                     .secondImg {
@@ -1930,8 +1914,8 @@
                 .text {
                     position: relative;
                     z-index: 1;
-                    width: 220px;
-                    height: 140px;
+                    width: 100%;
+                    height: 100%;
                     background-color: white;
                     padding: 16px 15px 4px 15px;
                     overflow: hidden;
@@ -2141,7 +2125,7 @@
     margin-top: 4.5%;
 
     .container {
-        max-width: 1220px;
+        max-width: 1188px;
         overflow: hidden;
         padding-bottom: 4.5%;
         border-bottom: 1px solid #66666622;
@@ -2165,6 +2149,11 @@
             justify-content: space-between;
             width: 55%;
 
+            .first {
+                color: #fcb941;
+                border-bottom: 1px solid #fcb941;
+            }
+
             p {
                 color: #777777;
                 font-size: 14px;
@@ -2176,65 +2165,45 @@
         }
     }
 
-    .carousel {
-        width: 100%;
+    .owl-nav button {
+        position: absolute;
+        color: #fcb941;
+        margin: auto;
+        transition: all 0.3s ease-in-out;
         height: 100%;
-        position: relative;
-        overflow: hidden;
-
-        .left {
-            color: #fcb941;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            position: absolute;
-            z-index: 1;
-            left: 0px;
-
-            i {
-                position: absolute;
-                cursor: pointer;
-            }
-        }
-
-        .right {
-            color: #fcb941;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            position: absolute;
-            z-index: 1;
-            right: 0px;
-
-            i {
-                position: absolute;
-                cursor: pointer;
-            }
-        }
+        top: 0;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
+    .owl-dots {
+        display: none;
+    }
+
+    .owl-nav button.owl-prev {
+        left: 0px;
+        font-size: 48px;
+    }
+
+    .owl-nav button.owl-next {
+        right: 0px;
+        font-size: 48px;
+    }
+
+
     .menu {
-        display: flex;
-        margin-top: 1%;
-        transition: all 0.5s;
-        width: max-content;
-        // position: relative;
-        // left: -7%;
-
-
         .card {
-            width: 280px;
-            height: 430px;
-            margin-right: 20px;
+            width: auto;
+            height: auto;
+            height: max-content;
 
             .img {
-                width: 277px;
-                height: 275px;
+                width: 100%;
+                height: 100%;
                 position: relative;
 
                 img {
-                    width: 275px;
-                    height: 275px;
+                    width: 100%;
+                    height: 100%;
                 }
 
                 .secondImg {
@@ -2294,8 +2263,8 @@
             .text {
                 position: relative;
                 z-index: 1;
-                width: 278px;
-                height: 145px;
+                width: 100%;
+                height: 100%;
                 background-color: white;
                 padding: 16px 15px 4px 15px;
                 overflow: hidden;

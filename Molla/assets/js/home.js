@@ -13,12 +13,12 @@ $(document).ready(function () {
         if ($(window).width() > 991) {
             $(".sidebar").animate({ left: '-280px' });
         }
-    //     else if ($("#topCenter .left .iconBar i").data('clicked') && $(window).width() < 991) {
-    //         $(".sidebar").animate({ left: '280px' });
-    //     }
-    //     else if($(".sidebar .close i").data('clicked')){
-    //         $(".sidebar").animate({left: '-280px'})
-    //     }
+        //     else if ($("#topCenter .left .iconBar i").data('clicked') && $(window).width() < 991) {
+        //         $(".sidebar").animate({ left: '280px' });
+        //     }
+        //     else if($(".sidebar .close i").data('clicked')){
+        //         $(".sidebar").animate({left: '-280px'})
+        //     }
     });
 });
 $(document).ready(function () {
@@ -72,50 +72,30 @@ $(document).ready(function () {
 })
 
 //tabmenu
-$('.menu').owlCarousel({
-    loop:true,
-    autoWidth:true,
-    responsiveClass:true,
-    responsive:{
-      0:{
-        items:1,
-        nav:true,
-        loop:true
-      },
-      600:{
-        items:3,
-        nav:true,
-        loop:true
-      },
-      1000:{
-        items:4,
-        nav:true,
-        loop:true
-      }
+$('#tabMenu .menu').owlCarousel({
+    loop: false,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        576: {
+            items: 2,
+            nav: true
+        },
+        900: {
+            items: 3,
+            nav: true
+        },
+        1200: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
     }
-  });
-  $('.menu').on('mousedown', function(e) {
-    if (e.which === 1) {
-      $(this).addClass('grabbing');
-      $(this).data('down', true);
-      $(this).data('x', e.clientX);
-      $(this).data('scrollLeft', this.scrollLeft);
-    }
-  });
-  
-  $('.menu').on('mouseup', function(e) {
-    if (e.which === 1) {
-      $(this).removeClass('grabbing');
-      $(this).data('down', false);
-    }
-  });
-  
-  $('.menu').on('mousemove', function(e) {
-    if ($(this).data('down') === true) {
-      this.scrollLeft = $(this).data('scrollLeft') - (e.clientX - $(this).data('x'));
-    }
-  });
-  
+})
 $(document).ready(function () {
     $("#tabMenu .header h3").mouseover(function () {
         if ($(this).attr("class") != "first") {
@@ -127,17 +107,15 @@ $(document).ready(function () {
             $(this).css("color", "#CCCCCC")
         }
     })
+})
+$(document).ready(function () {
     $("#tabMenu .header h3").click(function () {
-
         $("#tabMenu .header .first").removeClass("first")
+        $("#tabMenu .header h3").css("color", "#CCCCCC")
         $(this).css("color", "#333333")
         $(this).addClass("first");
-        if ($(this).attr("class") != "first") {
-            $(this).css("color", "#CCCCCC")
-        }
     })
 })
-let translate = 0;
 let headers = document.querySelectorAll("#tabMenu .header h3");
 headers.forEach(function (header) {
     header.addEventListener("click", function () {
@@ -155,82 +133,26 @@ headers.forEach(function (header) {
     });
 });
 
-
-
-let right = document.querySelectorAll("#tabMenu .carousel .right i")
-let left = document.querySelectorAll("#tabMenu .carousel .left i")
-let menus = document.querySelectorAll("#tabMenu .menu")
-
-
-function rightButton() {
-    menus.forEach(menu => {
-        if (!menu.classList.contains("d-none")) {
-            // let show = menu.querySelectorAll("#tabMenu .menu .show")
-            // let hide = menu.querySelectorAll("#tabMenu .menu .hide")
-            // if (show[show.length - 1].nextElementSibling != null) {
-                // show[0].classList.add("hide")
-                // show[0].classList.remove("show")
-                // show[show.length - 1].nextElementSibling.classList.remove("hide")
-                // show[show.length - 1].nextElementSibling.classList.add("show")
-                translate -= 290;
-                menu.style.transform = `translate(${translate}px)`;
-                // left.style.display = "flex"
-                // right.style.display = "none"
-            // }
-        }
-    })
-
-}
-function leftButton() {
-    menus.forEach(menu => {
-        if (!menu.classList.contains("d-none")) {
-            // let show = menu.querySelectorAll("#tabMenu .menu .show")
-            // let hide = menu.querySelectorAll("#tabMenu .menu .hide")
-            // if (show[0].previousElementSibling.classList != "right") {
-                // show[0].previousElementSibling.classList.add("show")
-                // show[0].previousElementSibling.classList.remove("hide")
-                // show[show.length - 1].classList.remove("show")
-                // show[show.length - 1].classList.add("hide")
-                translate += 290;
-                menu.style.transform = `translate(${translate}px)`;
-            // }
-            // left.style.display = "flex"
-            // right.style.display = "none"
-        }
-    })
-
-}
-
-right.forEach(element => {
-    element.addEventListener("click", rightButton);
-
-});
-left.forEach(element => {
-    element.addEventListener("click", leftButton);
-
-});
-
-
 //brands
 $('.brands').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:2,
-            nav:true,
-            loop:false
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 2,
+            nav: true,
+            loop: false
         },
-        600:{
-            items:4,
-            nav:false,
-            loop:false
+        600: {
+            items: 4,
+            nav: false,
+            loop: false
         },
-        1000:{
-            items:7,
-            nav:true,
-            loop:false
+        1000: {
+            items: 7,
+            nav: true,
+            loop: false
         }
     }
 })
@@ -250,7 +172,46 @@ heads.forEach(function (head) {
         });
     });
 });
-
+$(document).ready(function () {
+    $("#trendPro .headers p").mouseover(function () {
+        if ($(this).attr("class") != "first") {
+            $(this).css("color", "#fcb941")
+        }
+    })
+    $("#trendPro .headers p").mouseout(function () {
+        if ($(this).attr("class") != "first") {
+            $(this).css("color", "#777777")
+        }
+    })
+})
+$(document).ready(function () {
+    $("#trendPro .headers p").click(function () {
+        $("#trendPro .headers .first").removeClass("first")
+        $("#trendPro .headers p").css("color", "#777777")
+        $(this).css("color", "#fcb941")
+        $(this).addClass("first");
+    })
+})
+$('#trendPro .menu').owlCarousel({
+    loop: false,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 2,
+            nav: true
+        },
+        700: {
+            items: 3,
+            nav: true
+        },
+        1100: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
 //sellingPro
 let allP = document.querySelectorAll("#sellingPro .headers .right p");
 allP.forEach(function (p) {
@@ -266,3 +227,48 @@ allP.forEach(function (p) {
         });
     });
 });
+$(document).ready(function () {
+    $("#sellingPro .headers .right p").mouseover(function () {
+        if ($(this).attr("class") != "first") {
+            $(this).css("color", "#fcb941")
+        }
+    })
+    $("#sellingPro .headers .right p").mouseout(function () {
+        if ($(this).attr("class") != "first") {
+            $(this).css("color", "#777777")
+        }
+    })
+})
+$(document).ready(function () {
+    $("#sellingPro .headers .right p").click(function () {
+        $("#sellingPro .headers .first").removeClass("first")
+        $("#sellingPro .headers .right p").css("color", "#777777")
+        $(this).css("color", "#fcb941")
+        $(this).addClass("first");
+    })
+})
+$('#sellingPro .menu').owlCarousel({
+    loop: false,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        576: {
+            items: 2,
+            nav: true
+        },
+        900: {
+            items: 3,
+            nav: true
+        },
+        1200: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
+//basket

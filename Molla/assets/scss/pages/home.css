@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #topHeader {
   background-color: #333333;
   height: 39.5px;
@@ -742,55 +746,42 @@
   font-weight: 600;
   border-bottom: 1px solid black;
 }
-#tabMenu .container .carousel {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-#tabMenu .container .owl-prev,
-#tabMenu .container .owl-next {
+#tabMenu .container .owl-nav button {
   position: absolute;
-  cursor: pointer;
+  color: #fcb941;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
   height: 100%;
-  width: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#tabMenu .container .owl-prev span,
-#tabMenu .container .owl-next span {
-  position: absolute;
-  font-size: 64px;
+#tabMenu .container .owl-dots {
+  display: none;
 }
-#tabMenu .container .owl-prev {
+#tabMenu .container .owl-nav button.owl-prev {
   left: 0px;
+  font-size: 48px;
 }
-#tabMenu .container .owl-next {
+#tabMenu .container .owl-nav button.owl-next {
   right: 0px;
+  font-size: 48px;
 }
 #tabMenu .container .menu {
   display: flex;
   justify-content: center;
-  gap: 1%;
-  margin-top: 1%;
-  transition: all 0.5s;
-  width: -moz-max-content;
-  width: max-content;
 }
 #tabMenu .container .menu .card {
-  width: 273px;
-  height: 430px;
-  margin-right: 20px;
+  width: auto;
+  height: auto;
 }
 #tabMenu .container .menu .card .img {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 #tabMenu .container .menu .card .img img {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: 100%;
 }
 #tabMenu .container .menu .card .img .secondImg {
   display: none;
@@ -833,8 +824,8 @@
 #tabMenu .container .menu .card .text {
   position: relative;
   z-index: 1;
-  width: 270px;
-  height: 154.6px;
+  width: 100%;
+  height: auto;
   background-color: white;
   padding: 16px 15px 4px 15px;
   overflow: hidden;
@@ -1444,24 +1435,33 @@
 }
 
 #trendPro .container {
-  max-width: 1220px;
-  padding-bottom: 4.5%;
+  max-width: 1188px;
   border-bottom: 1px solid rgba(102, 102, 102, 0.1333333333);
   overflow: hidden;
 }
 #trendPro .container .left h1 {
-  font-size: 23px;
+  font-size: 24px;
   font-family: "Poppins", sans-serif;
   color: #333333;
   font-weight: 600;
 }
 #trendPro .container .left .img {
   margin-top: 10%;
+  width: 100%;
+  height: 100%;
+}
+#trendPro .container .left .img img {
+  width: 100%;
+  height: 100%;
 }
 #trendPro .container .headers {
   display: flex;
   justify-content: flex-end;
   gap: 3%;
+}
+#trendPro .container .headers .first {
+  color: #fcb941;
+  border-bottom: 1px solid #fcb941;
 }
 #trendPro .container .headers p {
   color: #777777;
@@ -1471,58 +1471,41 @@
   margin-bottom: 2%;
   cursor: pointer;
 }
-#trendPro .container .carousel {
+#trendPro .container .owl-nav button {
+  position: absolute;
+  color: #fcb941;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  top: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#trendPro .container .owl-dots {
+  display: none;
+}
+#trendPro .container .owl-nav button.owl-prev {
+  left: 0px;
+  font-size: 48px;
+}
+#trendPro .container .owl-nav button.owl-next {
+  right: 0px;
+  font-size: 48px;
+}
+#trendPro .container .menu {
+  margin-top: 8px;
+}
+#trendPro .container .menu .card {
+  width: auto;
+  height: auto;
+}
+#trendPro .container .menu .card .img {
   width: 100%;
   height: 100%;
   position: relative;
-  overflow: hidden;
-}
-#trendPro .container .carousel .left {
-  color: #fcb941;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 1;
-  left: 0px;
-}
-#trendPro .container .carousel .left i {
-  position: absolute;
-  cursor: pointer;
-}
-#trendPro .container .carousel .right {
-  color: #fcb941;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 1;
-  right: 0px;
-}
-#trendPro .container .carousel .right i {
-  position: absolute;
-  cursor: pointer;
-}
-#trendPro .container .menu {
-  display: flex;
-  margin-top: 1%;
-  transition: all 0.5s;
-  width: -moz-max-content;
-  width: max-content;
-}
-#trendPro .container .menu .card {
-  width: 225px;
-  height: 390px;
-  margin-right: 20px;
-}
-#trendPro .container .menu .card .img {
-  width: 220px;
-  height: 225px;
-  position: relative;
 }
 #trendPro .container .menu .card .img img {
-  width: 220px;
-  height: 225px;
+  width: 100%;
+  height: 100%;
 }
 #trendPro .container .menu .card .img .secondImg {
   display: none;
@@ -1565,8 +1548,8 @@
 #trendPro .container .menu .card .text {
   position: relative;
   z-index: 1;
-  width: 220px;
-  height: 140px;
+  width: 100%;
+  height: 100%;
   background-color: white;
   padding: 16px 15px 4px 15px;
   overflow: hidden;
@@ -1734,7 +1717,7 @@
   margin-top: 4.5%;
 }
 #sellingPro .container {
-  max-width: 1220px;
+  max-width: 1188px;
   overflow: hidden;
   padding-bottom: 4.5%;
   border-bottom: 1px solid rgba(102, 102, 102, 0.1333333333);
@@ -1754,6 +1737,10 @@
   justify-content: space-between;
   width: 55%;
 }
+#sellingPro .headers .right .first {
+  color: #fcb941;
+  border-bottom: 1px solid #fcb941;
+}
 #sellingPro .headers .right p {
   color: #777777;
   font-size: 14px;
@@ -1762,58 +1749,40 @@
   margin-bottom: 2%;
   cursor: pointer;
 }
-#sellingPro .carousel {
+#sellingPro .owl-nav button {
+  position: absolute;
+  color: #fcb941;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  top: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#sellingPro .owl-dots {
+  display: none;
+}
+#sellingPro .owl-nav button.owl-prev {
+  left: 0px;
+  font-size: 48px;
+}
+#sellingPro .owl-nav button.owl-next {
+  right: 0px;
+  font-size: 48px;
+}
+#sellingPro .menu .card {
+  width: auto;
+  height: auto;
+  height: -moz-max-content;
+  height: max-content;
+}
+#sellingPro .menu .card .img {
   width: 100%;
   height: 100%;
   position: relative;
-  overflow: hidden;
-}
-#sellingPro .carousel .left {
-  color: #fcb941;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 1;
-  left: 0px;
-}
-#sellingPro .carousel .left i {
-  position: absolute;
-  cursor: pointer;
-}
-#sellingPro .carousel .right {
-  color: #fcb941;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 1;
-  right: 0px;
-}
-#sellingPro .carousel .right i {
-  position: absolute;
-  cursor: pointer;
-}
-#sellingPro .menu {
-  display: flex;
-  margin-top: 1%;
-  transition: all 0.5s;
-  width: -moz-max-content;
-  width: max-content;
-}
-#sellingPro .menu .card {
-  width: 280px;
-  height: 430px;
-  margin-right: 20px;
-}
-#sellingPro .menu .card .img {
-  width: 277px;
-  height: 275px;
-  position: relative;
 }
 #sellingPro .menu .card .img img {
-  width: 275px;
-  height: 275px;
+  width: 100%;
+  height: 100%;
 }
 #sellingPro .menu .card .img .secondImg {
   display: none;
@@ -1856,8 +1825,8 @@
 #sellingPro .menu .card .text {
   position: relative;
   z-index: 1;
-  width: 278px;
-  height: 145px;
+  width: 100%;
+  height: 100%;
   background-color: white;
   padding: 16px 15px 4px 15px;
   overflow: hidden;
